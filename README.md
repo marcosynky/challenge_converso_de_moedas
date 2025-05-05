@@ -1,4 +1,4 @@
-# Challenge-conversor-de-moedas - Conversor de Moedas em Java
+# Challenge - Conversor de Moedas em Java
 
 ## 📖 Sobre
 
