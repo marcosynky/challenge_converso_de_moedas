@@ -1,8 +1,9 @@
 package services;
 
+
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import java.text.DecimalFormat;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
@@ -43,12 +44,8 @@ public class ConverseService {
             double taxaUSDFinalParaDestino = rates.get(moedaDestino).getAsDouble();
             double valorConvertido = valorEmUSD * taxaUSDFinalParaDestino;
 
-            // Formatação do resultado para duas casas decimais
-            DecimalFormat df = new DecimalFormat("#.##");
-            String valorFormatado = df.format(valorConvertido);
-
-            // Exibe o resultado com duas casas decimais
-            System.out.println("O valor  de >>> " + valor + " [" + moedaOrigem + "] corresponde ao valor final de >>> " + valorFormatado + " [" + moedaDestino + "]\n");
+            // Exibe o resultado
+            System.out.println("O valor de " + valor + " [" + moedaOrigem + "] corresponde ao valor final de >>> " + valorConvertido + " [" + moedaDestino + "]\n");
 
         } catch (Exception e) {
             System.out.println("Erro ao fazer a requisição para a API de câmbio.");
