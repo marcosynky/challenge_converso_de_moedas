@@ -4,6 +4,7 @@ out/
 !**/src/test/**/out/
 # Ignorar arquivos de configuração sensíveis
 src/main/resources/application.properties
+src/services/ConverseService.java
 
 ### Eclipse ###
 .apt_generated
