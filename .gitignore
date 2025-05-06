@@ -3,8 +3,8 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 # Ignorar arquivos de configuração sensíveis
-src/main/resources/application.properties
-src/configuration/ApiConfig.java
+src/configuration/
+
 
 ### Eclipse ###
 .apt_generated
